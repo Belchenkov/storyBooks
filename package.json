@@ -1,0 +1,16 @@
+{
+  "name": "storybooks",
+  "version": "1.0.0",
+  "description": "App to share public or write private stories",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node.js",
+    "Express.js",
+    "mLab.com"
+  ],
+  "author": "ABelchenkov",
+  "license": "ISC"
+}
