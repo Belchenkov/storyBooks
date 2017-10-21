@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Cuprum:400,700|Permanent+Marker&subset=cyrillic-ext');
+
+body {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 17px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+nav, 
+footer {
+    text-shadow: 0 2px 5px #000;
+}
+
+#main-menu {
+    text-shadow: none;
+}
+
+nav a.brand-logo.center {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+}
+
+
+main {
+    flex: 1 0 auto;
+  }
+      
