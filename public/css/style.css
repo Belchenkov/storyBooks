@@ -37,3 +37,15 @@ form .fa-floppy-o {
 footer {
     margin-top: 20px;
 }
+
+.story-text {
+    height: 150px;
+}
+
+.dash-status {
+    text-transform: capitalize;
+}
+
+#delete-form {
+    display: inline;
+}

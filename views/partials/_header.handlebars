@@ -10,7 +10,7 @@
             <ul class="right hide-on-small-only">
                 {{#if user }}
                 <li>
-                    <a href="/dashboard">Welcome, {{ user.firstName }}</a>
+                    <a href="/dashboard">Welcome, {{ user.firstName }} {{ user.lastName }}</a>
                 </li>
                 <li>
                     <a href="/auth/logout">
