@@ -31,6 +31,18 @@ router.get('/add', ensureAuthenticated, (req, res) => {
 });
 
 // Edit Story Form
+router.get('/edit/:id', ensureAuthenticated, (req, res) => {
+    Story.findOne({
+        _id: req.params.id
+    })
+    .populate('user')
+    .then(story => {
+        res.render('stories/edit', { story });
+    });
+});
+
+
+// Edit Story Form
 router.get('/edit', ensureAuthenticated, (req, res) => {
     res.render('stories/edit');
 });
