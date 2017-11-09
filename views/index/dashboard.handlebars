@@ -23,9 +23,10 @@
                         </a>
                         <form 
                             id="delete-form" 
-                            action="/stories/{{ id }}"
+                            action="/stories/{{ id }}?_method=DELETE"
                             method="post"    
                         >
+                            <input type="hidden" name="_method" value="DELETE">
                             <button type="submit" class="btn red">
                                 <i class="fa fa-trash"></i> Delete
                             </button>
