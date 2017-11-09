@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
+const methodOverride = require('method-override');
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
@@ -45,8 +46,11 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // Body Parser Middleware
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+// Method Override Middleware
+app.use(methodOverride('_method'));
 
 // Handlebars Middleware
 app.engine('handlebars', exphbs({
@@ -71,7 +75,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-// Set global vars 
+// Set global vars
 app.use((req, res, next) => {
     res.locals.user = req.user || null;
     next();
