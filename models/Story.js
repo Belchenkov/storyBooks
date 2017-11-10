@@ -46,4 +46,4 @@ const StorySchema = new Schema({
 });
 
 // Create collection and add schema
-mongoose.model('stories', StorySchema, 'stories')
+mongoose.model('stories', StorySchema, 'stories');
