@@ -32,15 +32,16 @@
      <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
      
      <script>
-        $( document ).ready(function(){
+        $(document).ready(function(){
             $(".button-collapse").sideNav();
             $('select').material_select();
         });
 
-        CKEDITOR.replace( 'body', {
-            plugins: 'wysiwygarea,toolbar,basicstyles,link'
-        });
-        
+        if (document.getElementById('body')) {
+            CKEDITOR.replace( 'body', {
+                plugins: 'wysiwygarea,toolbar,basicstyles,link'
+            });
+        }
      </script>
 </body>
 </html>
