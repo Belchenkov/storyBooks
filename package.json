@@ -4,7 +4,8 @@
   "description": "App to share public or write private stories",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "keywords": [
     "Node.js",
@@ -24,5 +25,8 @@
     "mongoose": "^4.11.12",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
   }
 }

@@ -49,3 +49,12 @@ footer {
 #delete-form {
     display: inline;
 }
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}

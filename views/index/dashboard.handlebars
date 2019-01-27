@@ -1,5 +1,8 @@
 <h1 class="center-align">Welcome {{ user.firstName }} {{ user.lastName }}! </h1>
-<h4>Your Stories</h4>
+<h4 class="d-flex">
+    <img class="mr-10" src="https://img.icons8.com/clouds/70/000000/likes-folder.png">
+    <div>Your Stories</div>
+</h4>
 
 {{#if stories}}
     <table class="striped">
