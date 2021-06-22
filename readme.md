@@ -2,9 +2,14 @@
 
 ### App for manage Stories on Node.js/Express.js
 
->   1. git clone
-    2. cd directory
-    3. npm install
-    4. npm start 
+### Get started
 
-Demo: https://stark-taiga-28840.herokuapp.com
+```shell script
+git clone
+```
+```shell script
+npm i
+```
+```shell script
+npm start
+```
