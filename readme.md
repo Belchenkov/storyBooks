@@ -2,8 +2,8 @@
 
 > App for manage Stories on Node.js/Express.js
 
-### [Demo]()
-[![IMAGE ALT TEXT HERE](./screen.png)]()
+### [Demo](https://story-books-nodejs-ab.herokuapp.com)
+[![IMAGE ALT TEXT HERE](./screen.png)](https://radikal.ru/video/hQCctH7enYq)
 
 ### Get started
 
